@@ -1,0 +1,372 @@
+/*main properties*/
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1107px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*header*/
+
+header{
+  background: #fafafe;
+  height: auto;
+}
+
+.header-info{
+  padding-top: 10rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header-info p {
+  color: #949494;
+  padding-top: 20px;
+}
+
+.nav{
+  position: fixed;
+  background: white;
+  width: 100%;
+  padding: 0 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.nav ul{
+  float: right;
+  margin-top: 65px;
+  display: inline-flex;
+}
+
+.nav li{
+  display: inline;
+  margin: 10px 20px;
+  padding: 0.5rem;
+}
+
+.nav li:hover{
+  box-shadow: 1px 1px 0px 0px lightgrey;
+}
+
+.nav a{
+  text-decoration: none;
+  color: black;
+}
+
+.logo{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  width: 50px;
+  float: left;
+  display: inline-block;
+}
+
+.header-input{
+  max-width: 650px;
+  display: inline-block;
+  padding-top: 2rem;
+}
+
+.header-input input {
+  border-radius: 20px;
+  border: 1px solid #f1f1f1;
+  padding: 10px;
+  width: 350px;
+}
+
+.header-input button{
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  width: 100px;
+  background-color: #052BA8;
+  color: white;
+}
+
+.header-input button:hover{
+  cursor: pointer;
+  background: #05B2DA;
+  transition-duration: 0.5s;
+}
+
+.sign-login{
+  background-image: url(Lbackground.jpg);
+  background-position: center;
+  text-align: left;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.sign-login input{
+  border-radius: 20px;
+  border: 1px solid #f1f1f1;
+  padding: 10px;
+  width: 200px;
+}
+
+.sign-login button{
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  width: 100px;
+  background-color: #052BA8;
+  color: white;
+}
+
+.sign-login button:hover{
+  cursor: pointer;
+  background: #05B2DA;
+  transition-duration: 0.5s;
+}
+
+.sign-login p{
+  display: inline;
+}
+
+.login{
+  padding-right: 40px;
+}
+
+/*top-animes*/
+
+.top-animes .top-animes-text{
+  text-align: center;
+  margin-top: 10px;
+  padding: 0.5rem;
+}
+
+.top-animes .top-animes-text p{
+  padding: 20px;
+  color: #949494;
+}
+
+.box-area{
+  display: flex;
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+
+.box{
+  display: inline-block;
+  vertical-align: middle;
+  width: 33.33%;
+  padding-left: 10px;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+.box:hover{
+  box-shadow: 0px 0px 10px 3px lightgrey;
+}
+
+/*anime-list*/
+.Anime-list .list{
+  margin: 20px 0px;
+  padding-top: 20px;
+}
+
+.list h1{
+  text-align: center;
+}
+
+.list p {
+  text-align: center;
+  padding: 20px;
+  color: #949494;
+}
+
+.list ol{
+  margin-left: 80px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.list li{
+  display: inline-flex;
+}
+
+.list li a{
+  text-align: center;
+  border: 1px solid black;
+  width: 300px;
+  display: inline-block;
+  margin-right: 15px;
+  border-radius: 8px;
+  margin-bottom: 0.1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.list li a:hover{
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+
+.list button{
+  border: 0px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.list button a:hover{
+  background: #05B2DA;
+  transition-duration: 0.5s;
+  color: white;
+}
+
+.list button a{
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 150px;
+  margin-left: 80px;
+  background-color: #052BA8;
+  color: white;
+}
+
+/*contact-us*/
+.contact-us{
+  margin: 40px 0px;
+  padding: 40px 0px;
+  height: auto;
+  overflow: hidden;
+}
+
+.contact-us .contact-us-text{
+  text-align: center;
+}
+
+.contact-us-text p{
+  padding: 20px;
+  color: #949494;
+}
+
+.contact-us-form input{
+  margin-right: 20px;
+  border-radius: 50px;
+  padding: 10px;
+  width: 350px;
+  border: 1px solid #f1f1f1;
+  display: inline-block;
+}
+
+.contact-us-form button{
+  height: 50px;
+  display: block;
+  margin-top: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50px;
+  border: 1px solid black;
+  width: 150px;
+  background-color: #052BA8;
+  color: white;
+}
+
+.contact-us-form button:hover{
+  cursor: pointer;
+  background: #05B2DA;
+  transition-duration: 0.5s;
+}
+
+/*footer*/
+.footer{
+  padding: 5rem 0;
+  height: auto;
+  overflow: hidden;
+  background: #fafafa;
+  border-top: 1px solid #052BA8;
+}
+
+.footer p{
+  color: #949494;
+  text-align: left;
+  padding: 2rem 0;
+}
+
+.col{
+  width: 24%;
+  height: 300px;
+  display: inline-block;
+  padding: 0 20px;
+  vertical-align: top;
+}
+
+.col input{
+  border-radius: 20px;
+  border: 1px solid #f1f1f1;
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+}
+
+.col button{
+  height: 40px;
+  border-radius: 50px;
+  margin-top: 1.5rem;
+  padding: 10px;
+  background: #052BA8;
+  width: 130px;
+  border: 1px solid black;
+  color: #fff;
+}
+
+.col button:hover{
+    cursor: pointer;
+    background: #05B2DA;
+    transition-duration: 0.5s;
+}
+
+.col-box{
+  padding-left: 30px;
+}
+
+.col-box ul{
+  padding-top: 20px;
+}
+
+.col-box li{
+  list-style: none;
+  padding-top: 10px;
+}
+
+.col-box a{
+  color: #949494;
+  text-decoration: none;
+}
+
+.social a{
+  font-size: 30px;
+  display: inline-block;
+}
+
+.social a:nth-child(3){
+  margin-left: 10px;
+}
+
+.social a:nth-child(4){
+  margin-left: 10px;
+}
+
+.social a:nth-child(5){
+  margin-left: 10px;
+}
