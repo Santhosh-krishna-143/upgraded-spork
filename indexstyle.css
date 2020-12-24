@@ -21,9 +21,67 @@ html, body {
 /*header*/
 
 header{
+  margin-right: auto;
+  margin-left: auto;
   background: #fafafe;
-  height: auto;
+  width: 100%;
+  position: fixed;
+  background: white;
 }
+
+.logo-container{
+  width: 100%;
+  padding:50px 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+ .main-logo{
+   width: 20%;
+   object-fit: contain;
+ }
+
+ .hamburger{
+   width: 50px;
+   height:50px;
+   padding: 0.7rem 4rem 0 0;
+   display: none;
+ }
+
+ .dropdown{
+   display: flex;
+   text-decoration: none;
+   float: right;
+   list-style: none;
+ }
+
+ .dropdown li{
+   margin: 10px;
+   padding: 10px;
+ }
+
+ .dropdown li:hover{
+   box-shadow: 1px 1px 0px 0px lightgrey;
+ }
+
+ .dropdown a{
+   color: black
+ }
+
+ .dropdown-mobile li{
+   padding: 10px;
+   border-radius: 3px;
+   border: 1px solid black;
+   background: #0111;
+ }
+
+ .dropdown-mobile a{
+   color: black;
+ }
+
+ .dropdown-mobile a:hover{
+   color: lightgreen;
+ }
 
 .header-info{
   padding-top: 10rem;
@@ -37,8 +95,6 @@ header{
 }
 
 .nav{
-  position: fixed;
-  background: white;
   width: 100%;
   padding: 0 0;
   border-bottom: 1px solid #e7e7e7;
@@ -69,7 +125,6 @@ header{
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 20px;
-  width: 50px;
   float: left;
   display: inline-block;
 }
@@ -84,7 +139,7 @@ header{
   border-radius: 20px;
   border: 1px solid #f1f1f1;
   padding: 10px;
-  width: 350px;
+  width: 360px;
 }
 
 .header-input button{
@@ -104,44 +159,110 @@ header{
 
 .sign-login{
   background-image: url(Lbackground.jpg);
-  background-position: center;
-  text-align: left;
+  background-position: right;
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  display: inline-flex;
-  width: 100%;
   margin-bottom: 20px;
+  background-size: cover;
+  height: auto;
 }
 
-.sign-login input{
+.form{
+  width: 360px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.Register{
+  padding-bottom: 20px;
+}
+
+.Register a{
+  color: #052BA8;
+}
+
+.Register a:hover{
+  text-decoration: underline;
+  color: lightgreen;
+}
+
+.Register button{
+  width:360px;
+  padding: 10px;
+  border-radius: 3px;
+  background: #052BA8;
+  color: #ffff;
+  border: 1px solid black;
+}
+
+.Register button:hover{
+  cursor: pointer;
+  background: #05B2DA;
+  transition-duration: 0.5s;
+  box-shadow: 1px 2px 2px 0px #616364;
+}
+
+.sign-up{
+  margin-bottom: 30px;
+  display: none;
+}
+
+.sign-up input{
   border-radius: 20px;
   border: 1px solid #f1f1f1;
   padding: 10px;
-  width: 200px;
+  width: 360px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 1px 0px lightgray;
 }
 
-.sign-login button{
-  border-radius: 20px;
+.sign-up button{
+  border-radius: 3px;
   border: 1px solid black;
   padding: 10px;
-  width: 100px;
+  width: 360px;
   background-color: #052BA8;
   color: white;
 }
 
-.sign-login button:hover{
+.sign-up button:hover{
   cursor: pointer;
   background: #05B2DA;
   transition-duration: 0.5s;
-}
-
-.sign-login p{
-  display: inline;
+  box-shadow: 1px 2px 2px 0px #616364;
 }
 
 .login{
-  padding-right: 40px;
+  display: none;
+}
+
+.login input{
+  border-radius: 20px;
+  border: 1px solid #f1f1f1;
+  padding: 10px;
+  width: 360px;
+  display: block;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 1px 0px lightgray;
+}
+
+.login button{
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 10px;
+  width: 360px;
+  background-color: #052BA8;
+  color: white;
+}
+
+.login button:hover{
+  cursor: pointer;
+  background: #05B2DA;
+  transition-duration: 0.5s;
+  box-shadow: 1px 2px 2px 0px #616364;
 }
 
 /*top-animes*/
@@ -207,7 +328,6 @@ header{
   text-align: center;
   border: 1px solid black;
   width: 300px;
-  display: inline-block;
   margin-right: 15px;
   border-radius: 8px;
   margin-bottom: 0.1rem;
@@ -267,6 +387,7 @@ header{
   width: 350px;
   border: 1px solid #f1f1f1;
   display: inline-block;
+  margin-bottom: 0.5rem;
 }
 
 .contact-us-form button{
@@ -371,6 +492,16 @@ header{
   margin-left: 10px;
 }
 
+label{
+  font-size: 26px;
+  cursor: pointer;
+}
+
+#toggle{
+  display: none;
+
+}
+
 @media only screen and (max-width: 1200px)
 {
 	[class*="container"]
@@ -388,11 +519,144 @@ header{
   }
 }
 
+@media only screen and (max-width: 840px)
+{
+  .nav{
+    height: 15%;
+  }
+
+  .nav ul{
+    text-align: left;
+    width: 93%;
+    display: block;
+    border: 1px solid black;
+    background: white;
+    padding: 10px;
+    margin-bottom: 10PX;
+    box-shadow: 5px 5px 5px 1px lightgray;
+    border-radius: 5px;
+    margin-top: 1px;
+    /* display: none; */
+  }
+
+  .nav a{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+
+  .nav a:hover{
+    color: lightgreen;
+    background: white;
+    border-bottom: 1px solid lightgreen;
+  }
+
+  .nav li:hover{
+    box-shadow: 0px 0px 0px 0px white;
+  }
+}
+
 @media only screen and (max-width: 768px)
 {
   [class*="box"]{
     width: 100%;
     display: block;
     height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .logo-container{
+    width: 100%
+  }
+
+  .hamburger{
+    display: block
+  }
+
+  .dropdown{
+    display: flex;
+    flex-direction: column;
+    display: none
+  }
+
+  .dropdown-mobile{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  img{
+    width: 50%;
+  }
+
+  ul{
+    width: 100%;
+    margin-right: 1rem;
+  }
+
+  [class*="col"]{
+    width: 80%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+
+  .list button{
+    width: 100%;
+    padding-right: 5.5rem;
+  }
+
+  .list li{
+    width: 100%;
+    padding-right: 50px;
+  }
+
+  .col{
+    padding: 0px 0px;
+  }
+
+  [class*="sign-login"]{
+    width: 100%;
+    display: block;
+  }
+
+  [class*="login"]{
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-us-form input{
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 400px)
+{
+  .form input{
+    width: auto;
+    margin-right: 35px;
+  }
+
+  .login input{
+    margin-left: 20px;
+  }
+
+  .form button{
+    width: 75%;
+    margin-right: 35px;
+  }
+
+  .header-input input{
+    width: auto;
+    margin-right: 35px;
   }
 }
+
+@media only screen and (max-width: 500px)
+{
+  .header-input input{
+    margin-bottom: 0.5rem;
+  }
